@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+:root {
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(./assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  font-family: 'Bellefair', serif;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-size: 9rem;
+}
+
+h2 {
+  color: white;
+  font-size: 6rem;
+}
+
+h3 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+h4 {
+  color: white;
+  font-size: 2rem;
+}
+
+h5 {
+  color: #D0D6F9;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+#cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 1.5rem 1.5rem;
+
+}
+
+#cabecalho .icon-cabecalho-menu {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+#cabecalho #menu {
+  display: none;
+  flex-direction: column;
+  gap: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  padding: 2rem 1.5rem;
+
+  animation: showMenu 0.4s ease;
+}
+
+@keyframes showMenu {
+  to {
+    width: 60%;
+  }
+  from {
+    width: 0;
+  }
+}
+
+#cabecalho #menu #close-menu {
+  align-self: end;
+}
+
+#cabecalho #menu .items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#cabecalho #menu .items a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  letter-spacing: 2.7px;
+}
+
+#cabecalho #menu .items a span {
+  font-weight: 700;
+}
+
