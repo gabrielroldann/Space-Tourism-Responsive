@@ -319,3 +319,50 @@ p {
 }
 
 
+/* CONTENT CREW PAGE */
+
+#crew {
+  background: url(./assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  font-family: 'Bellefair', serif;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  position: relative;
+}
+
+#content-crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+#content-crew img {
+  max-width: 177px;
+  max-height: 222px;
+}
+
+#content-crew #title-crew {
+  display: flex;
+  align-items: center;
+}
+
+#content-crew #title-crew p{
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  gap: 1rem;
+  letter-spacing: 2.7px;
+  font-size: 1.2rem;
+}
+
+#content-crew #title-crew span {
+  font-weight: 700;
+  opacity: 0.25;
+  letter-spacing: 4px;
+  font-size: 1.4rem;
+}
